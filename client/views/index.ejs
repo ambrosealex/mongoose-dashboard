@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sharks</title>
+    </head>
+    <body>
+        <h1>All the Sharks</h1>
+        <% for(var i in sharks) { %>
+            <p><a href="/sharks/<%= sharks[i]._id %>"><%= sharks[i].name %></a> : <%= sharks[i].type %> : <a href="/sharks/edit/<%= sharks[i]._id %>">Edit</a> : <a href="/sharks/destroy/<%= sharks[i]._id %>">Delete</a></p>
+        <% } %>
+    </body>
+</html>

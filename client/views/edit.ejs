@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Edit Shark</title>
+    </head>
+    <body>
+        <h1>Edit <%= shark[0].name %></h1>
+        <form class="" action="/sharks/<%= shark[0]._id %>" method="post">
+            Name: <input type="text" name="name" value=""> <br>
+            Type: <input type="text" name="type" value=""> <br>
+            Age: <input type="text" name="age" value=""> <br>
+            <input type="submit" name="editBtn" value="Edit Shark">
+        </form>
+    </body>
+</html>
